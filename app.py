@@ -7,7 +7,7 @@ from keras.models import load_model
 from PIL import Image
 
 
-img = Image.open("D:/pythonw/stockPrediction/stock-market-crash.png")
+img = Image.open("stock-market-crash.png")
 start = '2011-01-01'
 end = '2021-12-31'
 
