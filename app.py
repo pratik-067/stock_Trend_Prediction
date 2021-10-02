@@ -20,13 +20,13 @@ user_input = st.text_input("Enter Stock Ticker", 'AAPL')
 st.sidebar.header('User Input')
 
 
-def get_input():
-    start_date = st.sidebar.text_input("Start Date", start)
-    end_date = st.sidebar.text_input("End Date", end)
-    return start_date, end_date
+# def get_input():
+#     start_date = st.sidebar.text_input("Start Date", start)
+#     end_date = st.sidebar.text_input("End Date", end)
+#     return start_date, end_date
 
 
-start, end = get_input()
+# start, end = get_input()
 df = data.DataReader(user_input, 'yahoo', start, end)
 
 # Discribing
